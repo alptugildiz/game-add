@@ -1,0 +1,47 @@
+<div class="mt-5 container">
+    
+    <div class="row">
+        <h1>New Game</h1>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 mb-3">
+            <p id="gameNameWarning"></p>
+            <input type="text" class="form-control" placeholder="Game Name" aria-label="Game Name" id="gameName">
+            <p style="color: red; font-size: 14px;" id="nameValidator"></p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 mb-3">
+            <input type="text" pattern="^([A-Za-z]{1}[A-Za-z\d_]*\.)+[A-Za-z][A-Za-z\d_]*$" class="form-control"
+                placeholder="Bundle Name" aria-label="Bundle Name" id="bundle">
+            <p style="color: red; font-size: 14px;" id="bundleValidator"></p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 mb-3">
+
+            <input type="text" class="form-control" placeholder="Owner" aria-label="Owner" id="email">
+            <p style="color: red; font-size: 14px;" id="emailValidator"></p>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 mb-3">
+            <input type="file" accept="image/*"  class="form-control" placeholder="Games Picture" aria-label="icon"
+                id="icon">
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8"></div>
+        <div class="col-lg-2 mb-5">
+            <button (click)="newGame()" class="btn btn-success">Add Game</button>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+
+</div>
